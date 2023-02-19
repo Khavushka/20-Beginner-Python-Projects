@@ -2,4 +2,7 @@ def replace_word():
     
     str = "Hej med dig, scatina"
     word_to_replace = input("Enter the word to replace: ")
-    word = input("Enter the word replacement: ")
+    word_replacement = input("Enter the word replacement: ")
+    print(str.replace(word_to_replace, word_replacement))
+
+replace_word()
