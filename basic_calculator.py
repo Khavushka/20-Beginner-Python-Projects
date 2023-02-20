@@ -5,13 +5,17 @@
 # while loop to continue the program until the user wants to exit
 
 def add(a,b):
-   return a + b
+   answer = a + b
+   print(int(a) + " + " + int(b) + " = " + str(answer))
 
 def sub(a,b):
-    return a - b
+    answer = a - b
+    print(int(a) + " - " + int(b) + " = " + str(answer))
 
 def mul(a,b):
-    return a * b
+    answer = a * b
+    print(int(a) + " * " + int(b) + " = " + str(answer))
 
 def div(a,b):
-    return a / b
+    answer = a / b
+    print(int(a) + " / " + int(b) + " = " + str(answer))
