@@ -4,6 +4,8 @@
 # display each question to the user and allow them to answer
 # show the final result when quiz is completed
 
+score = 0
+
 quiz = {
     "question1": {
         "question": "What is the capital of France?",
@@ -13,5 +15,8 @@ quiz = {
         "question": "What is the capital of Danmark?",
         "answer": "Kopenhagen"
     },
-    
+    "question3": {
+        "question": "What is the capital of Germany?",
+        "answer": "Berlin"
+    }
 }
