@@ -27,5 +27,11 @@ for key, value in quiz.items():
     
     if answer.lower() == value['answer'].lower():
         print("Correct")
+        score = score + 1
+        print("Your score is " + str(score))
     else:
         print('You lose')
+        print("Your score " + str(score))
+
+print("You got " + str(score) + " out of 3 questions correctly")
+print("Your percentage is " + str(score/7 * 100) + "%")
