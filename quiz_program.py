@@ -20,3 +20,12 @@ quiz = {
         "answer": "Berlin"
     }
 }
+
+for key, value in quiz.items():
+    print(value['question'])
+    answer = input("Answer? ")
+    
+    if answer.lower() == value['answer'].lower():
+        print("Correct")
+    else:
+        print('You lose')
