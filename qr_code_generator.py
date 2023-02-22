@@ -9,7 +9,7 @@ def generate_qrcode(text):
 
     qr = qrcode.QRCode(
         version = 1,
-        error_correction = qrcode.constants.ERROR_CORRECTION,
+        error_correction = qrcode.constants.ERROR_CORRECT_L,
         box_size = 10,
         border = 4,
     )
@@ -17,6 +17,6 @@ def generate_qrcode(text):
     qr.add_data(text)
     qr.make(fit=True)
     img = qr.make_image(fill_color = "black", back_color="white")
-    img.save("qrimg.png")
+    img.save("./QR-code/qrimg.png")
 
-generate_qrcode("http://maxa.studio/")
+generate_qrcode("https://www.maxa.studio/")
