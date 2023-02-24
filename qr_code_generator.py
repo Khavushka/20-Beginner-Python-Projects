@@ -17,7 +17,7 @@ def generate_qrcode(text):
     qr.add_data(text)
     qr.make(fit=True)
     img = qr.make_image(fill_color = "black", back_color="white")
-    img.save("./QR-code/qrimg.png")
+    img.save("./QR-code/"+".png")
 
 # generate_qrcode("https://www.maxa.studio/")
 url = input("Input your url: ")
