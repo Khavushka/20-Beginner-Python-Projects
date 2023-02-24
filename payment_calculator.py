@@ -15,5 +15,6 @@ def main():
     monthly_payment = principal * monthly_interest_rate / (1- (1 + monthly_interest_rate) ** (-amount_of_months))
 
     print("The monthly payment for this loan is: " + str(monthly_payment))
+    print("The monthly payment in percent %.2f: " % monthly_payment)
 
 main()
