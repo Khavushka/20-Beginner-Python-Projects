@@ -16,6 +16,6 @@ def main():
         if word == "":
             break
         if word in word_dictionary:
-            print(word, ":", word_dictionary)
+            print(word, ":", word_dictionary[word])
 
 main()
