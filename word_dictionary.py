@@ -6,9 +6,10 @@
 
 from PyDictionary import PyDictionary
 
-dictionary = PyDictionary()
+dictionary = PyDictionary("eyes", "head")
 
-print(dictionary.meaning("eyes"))
+    
+print(dictionary.printMeanings())
 
 # def main():
 #     word_dictionary = {
