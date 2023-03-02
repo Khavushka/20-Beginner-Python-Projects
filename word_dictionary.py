@@ -5,11 +5,12 @@
 # print the definition
 
 from PyDictionary import PyDictionary
+dictionary=PyDictionary("eyes", "head")
 
-dictionary = PyDictionary("eyes", "head")
-
+# print (dictionary.meaning("indentation"))
     
-print(dictionary.printMeanings())
+# print(dictionary.printMeanings())
+print(dictionary.getMeanings())
 
 # def main():
 #     word_dictionary = {
