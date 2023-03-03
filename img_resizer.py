@@ -7,10 +7,12 @@
 
 from PIL import Image
 
-image = Image.open('img/sunrise.jpg')
+def resize_image(size1, size2):
+    image = Image.open('img/sunrise.jpg')
+    print(f'Current size: {image.size}')
+    resized_image = image.resize((size1, size2))
+    resized_image.save('img/new_image' + str(size1) + '.jpeg')
 
-print(f'Current size: {image.size}')
-
-resized_image = image.resize((500, 500))
-
-resized_image.save('img/new_image.jpg')
+size1 = int(input('Enter width: '))
+size2 = int(input('Enter length: '))
+resize_image(200, 300)
