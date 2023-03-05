@@ -3,13 +3,17 @@
 
 import matplotlib.pyplot as plt
 
-x = [2, 4, 5, 1, 5]
-y = [2, 3, 6, 5, 8]
+left = [1, 2, 3, 4, 5]
+height = [10, 11, 13, 15, 4]
 
-plt.plot(x, y, color = 'blue', linestyle = 'dashed', linewidth = 2, marker = 'o', markerfacecolor = 'green', markersize = 12)
+tick_label = ['one', 'two', 'three', 'four', 'five']
+
+plt.bar(left, height, tick_label = tick_label, width = 0.8, color=['red', 'yellow'])
+
+# plt.plot(left, height, color = 'blue', linestyle = 'dashed', linewidth = 2, marker = 'o', markerfacecolor = 'green', markersize = 12)
 # plt.ylim(x, y)
-plt.ylim(1, 8)
-plt.xlim(1, 8)
+# plt.ylim(1, 8)
+# plt.xlim(1, 8)
 
 
 # plt.plot(x, y, label = 'line 1')
@@ -23,8 +27,9 @@ plt.xlabel('X axis')
 
 plt.ylabel('Y axis')
 
-plt.title('Demo graph - Two lines')
+# plt.title('Demo graph - Two lines')
+plt.title('Demo graph - Bar Chart')
 
-plt.legend()
+# plt.legend()
 
 plt.show()
