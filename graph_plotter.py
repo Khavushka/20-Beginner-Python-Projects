@@ -11,10 +11,14 @@ plt.plot(x, y, label = 'line 1')
 x2 = [4, 6, 7, 8]
 y2= [3, 7, 2, 9]
 
+plt.plot(x2, y2, label ='line 2')
+
 plt.xlabel('X axis')
 
 plt.ylabel('Y axis')
 
-plt.title('Demo graph')
+plt.title('Demo graph - Two lines')
+
+plt.legend()
 
 plt.show()
