@@ -10,8 +10,8 @@ import requests
 
 def send_message():
     resp = requests.post('https://textbelt.com/text', {
-    'phone': 'mobilenumber her',
-    'message': 'Hej, smukke. I love you!!! Mom',
+    'phone': '+4542406338',
+    'message': 'Дога. Смотри я могу тебе смс отправить. Я тебя люблю.',
     'key': 'textbelt',
     })
     print(resp.json())
